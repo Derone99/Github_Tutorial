@@ -1,0 +1,290 @@
+{
+  "Uuid": "8ffd4e00-eee5-4bc7-b472-44559ad8d0bb",
+  "IsCustomNode": false,
+  "Description": null,
+  "Name": "Current Document Test",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Revit.Application.Document.Current",
+      "Id": "ed82e6162c7d4ae9911a2efcd004c4c5",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "e3188640d05f4c69a9c4b57eae004b01",
+          "Name": "Document",
+          "Description": "Document",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get the current document\n\nDocument.Current: Document"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "e9e5c177e73940b7883cf33820c61934",
+      "Inputs": [
+        {
+          "Id": "a155a83ba27d4f2ab2d9e1585b345f4f",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "88281cd52ca54a03865965aa2478b66d",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Function, DynamoCore",
+      "FunctionSignature": "5b9b1cd5-c248-4799-b689-6b31fe525bd2",
+      "FunctionType": "Graph",
+      "NodeType": "FunctionNode",
+      "Id": "adf10becb81947258992ddd816b99c5a",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "a4bd7bc1279d458a9d17eb52876762f0",
+          "Name": "_out",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Retrieves Current Document"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "fa6442aad7f445fcb9ff63a87e836ffb",
+      "Inputs": [
+        {
+          "Id": "5523742d9a4e42c7b79108ff7ba5faf1",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "7a7a378c47e2499db429f72da05fc8ca",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Function, DynamoCore",
+      "FunctionSignature": "e5c5958c-016e-4efc-bb16-b3734d00a855",
+      "FunctionType": "Graph",
+      "NodeType": "FunctionNode",
+      "Id": "84f680d1e24f4e38bd0c6ea01d807fba",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "47c8a988e70e4c1292bfbbbafa2d9393",
+          "Name": "View",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Gets the active view of the current document"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "0fc18dee41e54af69bfdbeb8c4dda1ef",
+      "Inputs": [
+        {
+          "Id": "4dcb0bb73c2e462b928467dca78b5703",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "30ae20d15f984160be876b1a53cb9c6f",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "e3188640d05f4c69a9c4b57eae004b01",
+      "End": "a155a83ba27d4f2ab2d9e1585b345f4f",
+      "Id": "f18de22195544831b5b444bd574cdac3"
+    },
+    {
+      "Start": "a4bd7bc1279d458a9d17eb52876762f0",
+      "End": "5523742d9a4e42c7b79108ff7ba5faf1",
+      "Id": "dd5d8748610f49558cf9901aed62d40d"
+    },
+    {
+      "Start": "47c8a988e70e4c1292bfbbbafa2d9393",
+      "End": "4dcb0bb73c2e462b928467dca78b5703",
+      "Id": "9de77fe4b3a843e4b62ff161c78999b6"
+    }
+  ],
+  "Dependencies": [
+    "5b9b1cd5-c248-4799-b689-6b31fe525bd2",
+    "e5c5958c-016e-4efc-bb16-b3734d00a855"
+  ],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "archi-lab.net",
+      "Version": "2023.213.1722",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "adf10becb81947258992ddd816b99c5a"
+      ]
+    },
+    {
+      "Name": "Clockwork for Dynamo 2.x",
+      "Version": "2.4.0",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "84f680d1e24f4e38bd0c6ea01d807fba"
+      ]
+    }
+  ],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.6.1.8786",
+      "RunType": "Automatic",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "Document.Current",
+        "Id": "ed82e6162c7d4ae9911a2efcd004c4c5",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 320.66666666666669,
+        "Y": 206.66666666666663
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Watch",
+        "Id": "e9e5c177e73940b7883cf33820c61934",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 552.66666666666652,
+        "Y": 204.66666666666663
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Current Document",
+        "Id": "adf10becb81947258992ddd816b99c5a",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 320.00000000000006,
+        "Y": 373.33333333333331
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Watch",
+        "Id": "fa6442aad7f445fcb9ff63a87e836ffb",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 558.0,
+        "Y": 371.33333333333331
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Document.ActiveViewFromCurrentDocument",
+        "Id": "84f680d1e24f4e38bd0c6ea01d807fba",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 310.00000000000006,
+        "Y": 534.66666666666663
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Watch",
+        "Id": "0fc18dee41e54af69bfdbeb8c4dda1ef",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 724.0,
+        "Y": 532.66666666666663
+      }
+    ],
+    "Annotations": [],
+    "X": -52.746666666666556,
+    "Y": -148.37,
+    "Zoom": 0.8425
+  }
+}
